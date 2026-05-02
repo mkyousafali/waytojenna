@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#1a6b3c"/>
+  
+  <!-- Mosque dome shape -->
+  <ellipse cx="256" cy="200" rx="130" ry="110" fill="#2d8a52"/>
+  
+  <!-- Dome arch -->
+  <path d="M126 200 Q126 90 256 90 Q386 90 386 200 L386 240 L126 240 Z" fill="#f0f9f4"/>
+  
+  <!-- Minaret left -->
+  <rect x="100" y="180" width="36" height="120" rx="4" fill="#f0f9f4"/>
+  <ellipse cx="118" cy="180" rx="18" ry="28" fill="#f0f9f4"/>
+  <rect x="112" y="152" width="12" height="20" fill="#c9a84c"/>
+  
+  <!-- Minaret right -->
+  <rect x="376" y="180" width="36" height="120" rx="4" fill="#f0f9f4"/>
+  <ellipse cx="394" cy="180" rx="18" ry="28" fill="#f0f9f4"/>
+  <rect x="388" y="152" width="12" height="20" fill="#c9a84c"/>
+  
+  <!-- Main body -->
+  <rect x="156" y="238" width="200" height="122" rx="0" fill="#f0f9f4"/>
+  
+  <!-- Door arch -->
+  <path d="M226 360 L226 290 Q256 270 286 290 L286 360 Z" fill="#1a6b3c"/>
+  
+  <!-- Crescent on dome -->
+  <path d="M256 100 C248 100 240 108 240 118 C240 128 248 136 256 136 C248 136 238 128 238 118 C238 108 248 100 256 100 Z" fill="#c9a84c"/>
+  <circle cx="265" cy="118" r="16" fill="#c9a84c"/>
+  <!-- star -->
+  <polygon points="256,96 258,102 265,102 260,106 262,113 256,109 250,113 252,106 247,102 254,102" fill="#c9a84c"/>
+  
+  <!-- Ground line -->
+  <rect x="80" y="358" width="352" height="12" rx="6" fill="#2d8a52"/>
+  
+  <!-- Arabic text: الله -->
+  <text x="256" y="430" font-family="serif" font-size="58" fill="#c9a84c" text-anchor="middle" font-weight="bold">الله</text>
+</svg>
