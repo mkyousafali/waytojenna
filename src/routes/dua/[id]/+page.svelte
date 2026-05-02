@@ -1,6 +1,6 @@
 <script>
 	import { favoritesStore } from '$lib/stores/favorites.svelte.js';
-	import { speak, stopSpeech, hasVoiceForLang } from '$lib/utils/tts.js';
+	import { speak, stopSpeech } from '$lib/utils/tts.js';
 	import { showToast } from '$lib/utils/toast.js';
 	import { browser } from '$app/environment';
 
@@ -42,16 +42,9 @@
 		stopSpeech();
 		speakingMl = true;
 		try {
-			const hasMl = await hasVoiceForLang('ml');
-			if (hasMl) {
-				await speak(dua.malayalam, 'ml');
-			} else {
-				// Fallback: read transliteration in English so user hears something
-				showToast('Malayalam voice not installed — reading transliteration instead.');
-				await speak(dua.transliteration || dua.malayalam, 'en');
-			}
+			await speak(dua.malayalam, 'ml');
 		} catch (e) {
-			showToast('Could not play audio.');
+			showToast('Could not play Malayalam audio.');
 		} finally {
 			speakingMl = false;
 		}
