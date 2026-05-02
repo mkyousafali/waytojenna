@@ -39,16 +39,19 @@
 			speakingMl = false;
 			return;
 		}
-		if (!hasVoiceForLang('ml')) {
-			showToast('Malayalam voice not available on this device. Enable it in Settings → Accessibility → TTS.');
-			return;
-		}
 		stopSpeech();
 		speakingMl = true;
 		try {
-			await speak(dua.malayalam, 'ml');
+			const hasMl = await hasVoiceForLang('ml');
+			if (hasMl) {
+				await speak(dua.malayalam, 'ml');
+			} else {
+				// Fallback: read transliteration in English so user hears something
+				showToast('Malayalam voice not installed — reading transliteration instead.');
+				await speak(dua.transliteration || dua.malayalam, 'en');
+			}
 		} catch (e) {
-			showToast('Could not play Malayalam audio.');
+			showToast('Could not play audio.');
 		} finally {
 			speakingMl = false;
 		}
