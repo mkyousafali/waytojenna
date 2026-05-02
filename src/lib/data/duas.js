@@ -191,12 +191,12 @@ export const duas = [
 		title: 'Ayatul Kursi (Evening)',
 		titleML: 'ആയത്തുൽ കുർസി (വൈകുന്നേരം)',
 		arabic:
-			'اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ',
+			'اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ',
 		transliteration:
-			"Allahu la ilaha illa Huwal-Hayyul-Qayyum, la ta'khudhuhu sinatun wa la nawm, lahu ma fis-samawati wa ma fil-ard",
+			"Allahu la ilaha illa Huwal-Hayyul-Qayyum, la ta'khudhuhu sinatun wa la nawm, lahu ma fis-samawati wa ma fil-ard, man dhal-ladhi yashfa'u 'indahu illa bi-idhnih, ya'lamu ma bayna aydihim wa ma khalfahum, wa la yuhituna bi-shay-im-min 'ilmihi illa bima sha', wasi'a kursiyyuhus-samawati wal-ard, wa la ya-uduhu hifdhuhuma, wa Huwal-'Aliyyul-'Adheem",
 		malayalam:
-			'അല്ലാഹു — അവൻ അല്ലാതെ ഒരു ദൈവവുമില്ല. അവൻ ചിരഞ്ജീവി, സ്വയംഭൂ. അവനെ മയക്കമോ ഉറക്കമോ ബാധിക്കില്ല. ആകാശഭൂമികളിലുള്ളതെല്ലാം അവനുള്ളതാണ്.',
-		reference: 'Quran 2:255 — recite after every prayer for protection'
+			'അല്ലാഹു — അവൻ അല്ലാതെ ഒരു ദൈവവുമില്ല. ചിരഞ്ജീവി, സ്വയംഭൂ. മയക്കമോ ഉറക്കമോ അവനെ ബാധിക്കില്ല. ആകാശഭൂമികളിലുള്ളതെല്ലാം അവനുള്ളതാണ്. അവന്റെ അനുമതിയില്ലാതെ അവന്റെ സന്നിധിയിൽ ശിപാർശ ചെയ്യാൻ ആരുണ്ട്? അവർക്ക് മുൻപിലും പിൻപിലും ഉള്ളതെല്ലാം അവൻ അറിയുന്നു. അവൻ ഉദ്ദേശിക്കുന്നതൊഴികെ അവന്റെ അറിവിൽ നിന്ന് ഒന്നും ആർക്കും ചൂഴ്ന്നറിയാൻ കഴിയില്ല. അവന്റെ കുർസി ആകാശഭൂമികളെ വലയം ചെയ്തിരിക്കുന്നു. അവ രണ്ടിനേയും കാത്തുസൂക്ഷിക്കൽ അവന് ഭാരമേ ആകുന്നില്ല. അവൻ ഉന്നതൻ, മഹോന്നതൻ.',
+		reference: 'Quran 2:255 — recite after every fard prayer; recite in the evening for protection'
 	},
 
 	/* ─────────── TOILET ─────────── */
@@ -209,7 +209,7 @@ export const duas = [
 		transliteration: "Allahumma innee a'oothu bika minal-khubuthi wal-khaba-ith",
 		malayalam:
 			'അല്ലാഹുവേ, ആൺ-പിശാചുകളിൽ നിന്നും പെൺ-പിശാചുകളിൽ നിന്നും ഞാൻ നിന്നോട് അഭയം തേടുന്നു.',
-		reference: 'Bukhari and Muslim'
+		reference: 'Sahih al-Bukhari 142, Sahih Muslim 375'
 	},
 	{
 		id: 'toilet-leaving',
@@ -288,12 +288,12 @@ export const duas = [
 		title: 'Ayatul Kursi Before Sleep',
 		titleML: 'ഉറക്കത്തിനു മുൻപ് ആയത്തുൽ കുർസി',
 		arabic:
-			'اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ',
+			'اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ',
 		transliteration:
-			"Allahu la ilaha illa Huwal-Hayyul-Qayyum, la ta'khudhuhu sinatun wa la nawm",
+			"Allahu la ilaha illa Huwal-Hayyul-Qayyum, la ta'khudhuhu sinatun wa la nawm, lahu ma fis-samawati wa ma fil-ard, man dhal-ladhi yashfa'u 'indahu illa bi-idhnih, ya'lamu ma bayna aydihim wa ma khalfahum, wa la yuhituna bi-shay-im-min 'ilmihi illa bima sha', wasi'a kursiyyuhus-samawati wal-ard, wa la ya-uduhu hifdhuhuma, wa Huwal-'Aliyyul-'Adheem",
 		malayalam:
-			'അല്ലാഹു — അവൻ അല്ലാതെ ഒരു ദൈവവുമില്ല. ചിരഞ്ജീവി, സ്വയംഭൂ. മയക്കമോ ഉറക്കമോ അവനെ ബാധിക്കില്ല. (ഉറക്കത്തിന് മുൻപ് ഓതുന്നവനെ അല്ലാഹു കാക്കും).',
-		reference: 'Bukhari 2311 — recite before sleep; an angel guards you till morning'
+			'അല്ലാഹു — അവൻ അല്ലാതെ ഒരു ദൈവവുമില്ല. ചിരഞ്ജീവി, സ്വയംഭൂ. മയക്കമോ ഉറക്കമോ അവനെ ബാധിക്കില്ല. ആകാശഭൂമികളിലുള്ളതെല്ലാം അവനുള്ളതാണ്. അവന്റെ അനുമതിയില്ലാതെ അവന്റെ സന്നിധിയിൽ ശിപാർശ ചെയ്യാൻ ആരുണ്ട്? അവർക്ക് മുൻപിലും പിൻപിലും ഉള്ളതെല്ലാം അവൻ അറിയുന്നു. അവൻ ഉദ്ദേശിക്കുന്നതൊഴികെ അവന്റെ അറിവിൽ നിന്ന് ഒന്നും ആർക്കും ചൂഴ്ന്നറിയാൻ കഴിയില്ല. അവന്റെ കുർസി ആകാശഭൂമികളെ വലയം ചെയ്തിരിക്കുന്നു. അവ രണ്ടിനേയും കാത്തുസൂക്ഷിക്കൽ അവന് ഭാരമേ ആകുന്നില്ല. അവൻ ഉന്നതൻ, മഹോന്നതൻ. (ഉറക്കത്തിനു മുൻപ് ഓതുന്നവനെ ഒരു മലക്ക് പ്രഭാതം വരെ കാത്തുസൂക്ഷിക്കും.)',
+		reference: 'Sahih al-Bukhari 5010 — recite before sleep; an angel guards you till morning'
 	},
 	{
 		id: 'sleeping-three-quls',
@@ -301,12 +301,12 @@ export const duas = [
 		title: 'Three Quls Before Sleep',
 		titleML: 'ഉറക്കത്തിനു മുൻപ് മൂന്ന് ഖുൽ',
 		arabic:
-			'قُلْ هُوَ اللَّهُ أَحَدٌ، اللَّهُ الصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ',
+			'قُلْ هُوَ اللَّهُ أَحَدٌ اللَّهُ الصَّمَدُ لَمْ يَلِدْ وَلَمْ يُولَدْ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ — قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ مِن شَرِّ مَا خَلَقَ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ — قُلْ أَعُوذُ بِرَبِّ النَّاسِ مَلِكِ النَّاسِ إِلَٰهِ النَّاسِ مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ مِنَ الْجِنَّةِ وَالنَّاسِ',
 		transliteration:
-			"Qul Huwal-lahu Ahad, Allahus-Samad, Lam yalid wa lam yoolad, wa lam yakun lahu kufuwan ahad",
+			"Qul Huwal-lahu Ahad, Allahus-Samad, Lam yalid wa lam yoolad, wa lam yakun lahu kufuwan ahad — Qul a'oothu bi-Rabbil-falaq, min sharri ma khalaq, wa min sharri ghasiqin idha waqab, wa min sharrin-naffathati fil-'uqad, wa min sharri hasidin idha hasad — Qul a'oothu bi-Rabbin-nas, Malikin-nas, Ilahin-nas, min sharril-waswasil-khannas, alladhi yuwaswisu fi sudorin-nas, minal-jinnati wan-nas",
 		malayalam:
-			'പറയൂ: അവൻ അല്ലാഹുവാണ്, ഏകൻ. അല്ലാഹു നിരപേക്ഷൻ (ആശ്രയകേന്ദ്രം). അവൻ ജനിക്കുകയോ ജനിപ്പിക്കുകയോ ചെയ്തിട്ടില്ല. അവന് തുല്യനായി ഒരാളും ഇല്ല. (സൂറ അൽ ഇഖ്‌ലാസ് — 3 തവണ ഓതുക)',
-		reference: 'Bukhari 5017'
+			'(സൂറ അൽ ഇഖ്‌ലാസ്) പറയൂ: അവൻ അല്ലാഹുവാണ്, ഏകൻ. അല്ലാഹു ആശ്രയകേന്ദ്രം. അവൻ ജനിപ്പിക്കുകയോ ജനിക്കുകയോ ചെയ്തിട്ടില്ല. അവന് തുല്യനായി ഒരാളും ഇല്ല. — (സൂറ അൽ ഫലഖ്) പറയൂ: ഞാൻ പ്രഭാതത്തിന്റെ രക്ഷിതാവിനോട് അഭയം തേടുന്നു; അവൻ സൃഷ്ടിച്ചതിന്റെ ദോഷത്തിൽ നിന്നും, ഇരുൾ വ്യാപിക്കുമ്പോൾ രാത്രിയുടെ ദോഷത്തിൽ നിന്നും, കെട്ടുകളിൽ ഊതുന്നവരുടെ ദോഷത്തിൽ നിന്നും, അസൂയ കൊള്ളുമ്പോൾ അസൂയക്കാരന്റെ ദോഷത്തിൽ നിന്നും. — (സൂറ അന്നാസ്) പറയൂ: ഞാൻ മനുഷ്യരുടെ രക്ഷിതാവിനോട്, മനുഷ്യരുടെ ഭരണാധിപനോട്, മനുഷ്യരുടെ ദൈവത്തോട് അഭയം തേടുന്നു; ഒളിഞ്ഞ് വസ്‌വാസ് ഇടുന്നവന്റെ ദോഷത്തിൽ നിന്ന് — ജിന്നുകളിൽ നിന്നും മനുഷ്യരിൽ നിന്നുമുള്ളവൻ. (ഓരോ സൂറയും 3 തവണ ഓതുക.)',
+		reference: 'Sahih al-Bukhari 5017 — blow into cupped hands and wipe over the body 3 times'
 	},
 	{
 		id: 'sleeping-waking-up-night',
@@ -341,10 +341,13 @@ export const duas = [
 		category: 'travel',
 		title: 'Entering a Vehicle',
 		titleML: 'വാഹനത്തിൽ കയറുമ്പോൾ',
-		arabic: 'بِسْمِ اللَّهِ',
-		transliteration: 'Bismillah',
-		malayalam: 'അല്ലാഹുവിന്റെ നാമത്തിൽ (വാഹനത്തിൽ കയറുക).',
-		reference: 'Abu Dawud 2602'
+		arabic:
+			'بِسْمِ اللَّهِ وَالْحَمْدُ لِلَّهِ سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَى رَبِّنَا لَمُنقَلِبُونَ',
+		transliteration:
+			"Bismillahi walhamdu lillah, subhanal-lathee sakhkhara lana hadha wa ma kunna lahu muqrineen, wa inna ila Rabbina lamunqaliboon",
+		malayalam:
+			'അല്ലാഹുവിന്റെ നാമത്തിൽ, സ്തുതി അല്ലാഹുവിന്. ഇതിനെ ഞങ്ങൾക്ക് കീഴ്‌പ്പെടുത്തിത്തന്ന അവനെ ഞങ്ങൾ പ്രകീർത്തിക്കുന്നു — ഞങ്ങൾ ഇതിനെ നിയന്ത്രിക്കാൻ ശക്തരായിരുന്നില്ല. ഞങ്ങൾ ഞങ്ങളുടെ രക്ഷിതാവിങ്കലേക്ക് തിരിച്ചുപോകുന്നവർ തന്നെ.',
+		reference: 'Abu Dawud 2602, Tirmidhi 3446 — based on Quran 43:13-14'
 	},
 	{
 		id: 'travel-returning-home',
@@ -377,10 +380,12 @@ export const duas = [
 		title: 'Entering the Masjid',
 		titleML: 'മസ്ജിദിൽ കടക്കുമ്പോൾ',
 		arabic:
-			'اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ',
-		transliteration: "Allahummaf-tah lee abwaba rahmatik",
-		malayalam: 'അല്ലാഹുവേ, നിന്റെ കാരുണ്യത്തിന്റെ വാതിലുകൾ എനിക്ക് തുറന്നുതരൂ.',
-		reference: 'Muslim 713'
+			'بِسْمِ اللَّهِ وَالصَّلَاةُ وَالسَّلَامُ عَلَى رَسُولِ اللَّهِ اللَّهُمَّ اغْفِرْ لِي ذُنُوبِي وَافْتَحْ لِي أَبْوَابَ رَحْمَتِكَ',
+		transliteration:
+			"Bismillahi was-salatu was-salamu 'ala Rasulillah. Allahumma ighfir lee dhunoobi waf-tah lee abwaba rahmatik",
+		malayalam:
+			'അല്ലാഹുവിന്റെ നാമത്തിൽ. അല്ലാഹുവിന്റെ ദൂതന്റെ (ﷺ) മേൽ സ്വലാത്തും സലാമും. അല്ലാഹുവേ, എന്റെ പാപങ്ങൾ പൊറുത്തുതരൂ, നിന്റെ കാരുണ്യത്തിന്റെ വാതിലുകൾ എനിക്ക് തുറന്നുതരൂ.',
+		reference: 'Sahih Muslim 713, Ibn Majah 771'
 	},
 	{
 		id: 'masjid-leaving',
