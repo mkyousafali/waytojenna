@@ -1,6 +1,6 @@
 <script>
 	import { favoritesStore } from '$lib/stores/favorites.svelte.js';
-	import { speak, stopSpeech } from '$lib/utils/tts.js';
+	import { speak, stopSpeech, hasVoiceForLang } from '$lib/utils/tts.js';
 	import { showToast } from '$lib/utils/toast.js';
 	import { browser } from '$app/environment';
 
@@ -37,6 +37,11 @@
 		if (speakingMl) {
 			stopSpeech();
 			speakingMl = false;
+			return;
+		}
+		const hasMl = await hasVoiceForLang('ml');
+		if (!hasMl) {
+			showToast('Malayalam voice not installed on this device. Install it from Settings → Accessibility → Text-to-Speech.');
 			return;
 		}
 		stopSpeech();
