@@ -1,6 +1,6 @@
 <script>
 	import { favoritesStore } from '$lib/stores/favorites.svelte.js';
-	import { speak, stopSpeech } from '$lib/utils/tts.js';
+	import { speak, stopSpeech, hasVoiceForLang } from '$lib/utils/tts.js';
 	import { showToast } from '$lib/utils/toast.js';
 	import { browser } from '$app/environment';
 
@@ -14,6 +14,7 @@
 
 	// TTS state
 	let speakingAr = $state(false);
+	let speakingMl = $state(false);
 
 	async function playArabic() {
 		if (speakingAr) {
@@ -29,6 +30,27 @@
 			showToast('Could not play audio. Check browser support.');
 		} finally {
 			speakingAr = false;
+		}
+	}
+
+	async function playMalayalam() {
+		if (speakingMl) {
+			stopSpeech();
+			speakingMl = false;
+			return;
+		}
+		if (!hasVoiceForLang('ml')) {
+			showToast('Malayalam voice not available on this device. Enable it in Settings → Accessibility → TTS.');
+			return;
+		}
+		stopSpeech();
+		speakingMl = true;
+		try {
+			await speak(dua.malayalam, 'ml');
+		} catch (e) {
+			showToast('Could not play Malayalam audio.');
+		} finally {
+			speakingMl = false;
 		}
 	}
 
@@ -132,10 +154,29 @@
 						<polygon points="5 3 19 12 5 21 5 3" />
 					</svg>
 				{/if}
-				<span>{speakingAr ? 'Stop' : 'Play Arabic'}</span>
+					<span>{speakingAr ? 'Stop' : 'Play Arabic'}</span>
 			</button>
 
-
+			<button
+				class="audio-btn audio-btn-ml"
+				class:playing={speakingMl}
+				onclick={playMalayalam}
+				aria-label={speakingMl ? 'Stop Malayalam audio' : 'Play Malayalam meaning'}
+			>
+				{#if speakingMl}
+					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+						fill="currentColor">
+						<rect x="6" y="4" width="4" height="16" />
+						<rect x="14" y="4" width="4" height="16" />
+					</svg>
+				{:else}
+					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+						fill="currentColor">
+						<polygon points="5 3 19 12 5 21 5 3" />
+					</svg>
+				{/if}
+				<span>{speakingMl ? 'Stop' : 'അർഥം കേൾക്കൂ'}</span>
+			</button>
 		</div>
 
 		<!-- Transliteration -->
@@ -346,6 +387,21 @@
 
 	.audio-btn:active {
 		transform: scale(0.97);
+	}
+
+	.audio-btn-ml {
+		background: var(--color-primary-50);
+		color: var(--color-primary-dark);
+		border: 1px solid var(--color-primary-100);
+	}
+
+	.audio-btn-ml:hover {
+		background: var(--color-primary-100);
+	}
+
+	.audio-btn-ml.playing {
+		background: var(--color-primary);
+		color: white;
 	}
 
 	.audio-btn.playing {
